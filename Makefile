@@ -11,8 +11,8 @@ FFT_OBJ  = $(patsubst %.c,$(BUILD_DIR)/%.o,$(FFT_SRC))
 
 TARGETS  = gen_ft8 decode_ft8 test_ft8
 
-CFLAGS   = -fsanitize=address -O3 -ggdb3
-CPPFLAGS = -std=c11 -I.
+CFLAGS   = -fsanitize=address -O3 -ggdb3 -std=gnu11
+CPPFLAGS = -std=c11 -I. -std=gnu11
 LDFLAGS  = -fsanitize=address -lm
 
 # Optionally, use Portaudio for live audio input
